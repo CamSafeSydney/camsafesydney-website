@@ -3,6 +3,8 @@ backend:
   repo: CamSafeSydney/camsafesydney-website
   branch: main
   site_domain: camsafesydney.com.au
+  auth_endpoint: auth
+  base_url: https://api.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: "images"
