@@ -1,0 +1,19 @@
+{
+  "services": [
+    {
+      "name": "CCTV Installation",
+      "description": "Professional installation of high-quality security cameras for your home or business",
+      "price": "From $799"
+    },
+    {
+      "name": "System Maintenance",
+      "description": "Regular maintenance and servicing of your CCTV system to ensure optimal performance",
+      "price": "From $199"
+    },
+    {
+      "name": "Security Consultation",
+      "description": "Expert advice on security solutions tailored to your specific needs",
+      "price": "Free consultation"
+    }
+  ]
+}

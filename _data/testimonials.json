@@ -1,0 +1,22 @@
+{
+  "reviews": [
+    {
+      "name": "John Mitchell",
+      "type": "Business Owner",
+      "text": "CamSafe Sydney transformed our business security. Their team installed a comprehensive CCTV system that has significantly reduced theft and improved overall security.",
+      "rating": 5
+    },
+    {
+      "name": "Sarah Thompson",
+      "type": "Homeowner",
+      "text": "The peace of mind we've gained since installing CamSafe's security system is invaluable. The cameras are discreet yet effective.",
+      "rating": 5
+    },
+    {
+      "name": "Michael Chen",
+      "type": "Restaurant Owner",
+      "text": "Professional installation and excellent customer service. The team was punctual, neat, and thorough in their work.",
+      "rating": 5
+    }
+  ]
+}
