@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: your-github-username/your-repo-name
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.html"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Heading", name: "hero_heading", widget: "string"}
+          - {label: "Hero Description", name: "hero_description", widget: "text"}
+          
+      - label: "About Page"
+        name: "about"
+        file: "about.html"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Mission Statement", name: "mission", widget: "text"}
+          - {label: "Team Section", name: "team", widget: "markdown"}
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "_testimonials"
+    create: true
+    fields:
+      - {label: "Client Name", name: "name", widget: "string"}
+      - {label: "Business Type", name: "business_type", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Testimonial", name: "testimonial", widget: "text"}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5}
