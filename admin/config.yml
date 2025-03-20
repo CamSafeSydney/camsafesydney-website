@@ -2,14 +2,15 @@ backend:
   name: github
   repo: CamSafeSydney/camsafesydney-website
   branch: main
-  base_url: https://api.netlify.com
+  site_domain: camsafesydney.com.au
 
+publish_mode: editorial_workflow
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "settings"
+    label: "Site Settings"
     files:
       - label: "Contact Information"
         name: "contact"
@@ -20,6 +21,9 @@ collections:
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Business Hours", name: "hours", widget: "string"}
 
+  - name: "content"
+    label: "Content"
+    files:
       - label: "Services"
         name: "services"
         file: "_data/services.json"
