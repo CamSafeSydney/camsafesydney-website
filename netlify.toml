@@ -1,5 +1,6 @@
 [build]
-  publish = "/"
+  publish = "./"
+  command = ""
 
 [[redirects]]
   from = "/*"
@@ -14,7 +15,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    Content-Security-Policy = "default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;"
+    Content-Security-Policy = "default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https://api.netlify.com;"
 
 [build.processing]
   skip_processing = false
