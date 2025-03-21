@@ -2,10 +2,17 @@ backend:
   name: github
   repo: CamSafeSydney/camsafesydney-website
   branch: main
-  site_domain: camsafesydney.com.au
-  auth_endpoint: auth
   base_url: https://api.netlify.com
+  auth_endpoint: auth
+  cms_label_prefix: netlify-cms/
+  commit_messages:
+    create: "Create {{collection}} "{{slug}}""
+    update: "Update {{collection}} "{{slug}}""
+    delete: "Delete {{collection}} "{{slug}}""
+    uploadMedia: "Upload "{{path}}""
+    deleteMedia: "Delete "{{path}}""
 
+local_backend: false
 publish_mode: editorial_workflow
 media_folder: "images"
 public_folder: "/images"
