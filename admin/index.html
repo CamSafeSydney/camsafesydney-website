@@ -7,9 +7,8 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/netlify-cms@^2.10.192/dist/netlify-cms.js"></script>
   <script>
-    // Initialize Netlify Identity
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -17,19 +16,6 @@
             document.location.href = "/admin/";
           });
         }
-      });
-    }
-
-    // Add error logging
-    window.onerror = function(msg, url, lineNo, columnNo, error) {
-      console.log('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
-      return false;
-    };
-
-    // Log CMS initialization
-    if (window.CMS) {
-      window.CMS.on('init', () => {
-        console.log('CMS initialized');
       });
     }
   </script>
